@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import React, { useState } from 'react';
 
-import { useAppSelector, useAppDispatch } from '../../app/hooks'
+import { useAppSelector, useAppDispatch } from '../../hooks';
 import {
   decrement,
   increment,
@@ -8,22 +8,22 @@ import {
   incrementAsync,
   incrementIfOdd,
   selectCount,
-} from './counterSlice'
-import styles from './Counter.module.css'
+} from './counterSlice';
+import styles from './Counter.module.scss';
 
-function Counter() {
-  const dispatch = useAppDispatch()
-  const count = useAppSelector(selectCount)
-  const [incrementAmount, setIncrementAmount] = useState('2')
+const Counter = () => {
+  const dispatch = useAppDispatch();
+  const count = useAppSelector(selectCount);
+  const [incrementAmount, setIncrementAmount] = useState('2');
 
-  const incrementValue = Number(incrementAmount) || 0
+  const incrementValue = Number(incrementAmount) || 0;
 
   return (
     <div>
       <div className={styles.row}>
         <button
           className={styles.button}
-          aria-label="Decrement value"
+          aria-label='Decrement value'
           onClick={() => dispatch(decrement())}
         >
           -
@@ -31,7 +31,7 @@ function Counter() {
         <span className={styles.value}>{count}</span>
         <button
           className={styles.button}
-          aria-label="Increment value"
+          aria-label='Increment value'
           onClick={() => dispatch(increment())}
         >
           +
@@ -40,9 +40,9 @@ function Counter() {
       <div className={styles.row}>
         <input
           className={styles.textbox}
-          aria-label="Set increment amount"
+          aria-label='Set increment amount'
           value={incrementAmount}
-          onChange={(e) => setIncrementAmount(e.target.value)}
+          onChange={e => setIncrementAmount(e.target.value)}
         />
         <button
           className={styles.button}
@@ -64,7 +64,7 @@ function Counter() {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Counter
+export default Counter;
