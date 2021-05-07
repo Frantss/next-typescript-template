@@ -1,23 +1,49 @@
-# Redux Toolkit TypeScript Example
+# next-typescript-template
 
-This example shows how to integrate Next.js with [Redux Toolkit](https://redux-toolkit.js.org).
+## Installation
 
-The **Redux Toolkit** is a standardized way to write Redux logic (create actions and reducers, setup the store with some default middlewares like redux devtools extension). This example demonstrates each of these features with Next.js
+```shell
+# NPM
+npx create-next-app --example https://github.com/Frantss/next-typescript-template
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-redux-toolkit-typescript&project-name=with-redux-toolkit&repository-name=with-redux-toolkit)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-redux-toolkit-typescript with-redux-toolkit-app
-# or
-yarn create next-app --example with-redux-toolkit-typescript with-redux-toolkit-app
+# Yarn
+yarn create next-app --example https://github.com/Frantss/next-typescript-template
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Includes
+
+- [**Next.Js**](https://nextjs.org/): A React framework for static and servers side rendering
+- [**Preact**](https://preactjs.com/guide/v10/getting-started): Small runtime with all the React capabilities, aliased as React, for seamless integration
+- [**TypeScript**](https://www.typescriptlang.org/docs/): Why wouldn't you use it?
+- [**Jest**](https://jestjs.io/docs/en/getting-started): Don't forget to write tests
+  - [**Preact Testing Library**](https://preactjs.com/guide/v10/preact-testing-library): Great library to test all of your components and hooks
+- [**Cypress**](https://www.cypress.io/): For end-to-end tests
+- [**Redux Toolkit**](https://redux-starter-kit.js.org/): The easy way to do redux
+- [**Sass**](https://sass-lang.com/documentation):
+  - Autoprefixer
+  - Modules
+- Linting: For a clean and consistent codebase
+  - [**ESLint**](https://eslint.org/)
+  - [**Prettier**](https://prettier.io/docs/en/index.html)
+  - [**Stylelint**](https://stylelint.io/)
+  - [**lint-staged**](https://github.com/okonet/lint-staged)
+  - [**Husky**](https://typicode.github.io/husky/#/)
+
+## Commands
+
+- `yarn install`: Installs dependencies
+
+- `yarn dev`: Run a development, HMR server
+
+- `yarn build`: Production-ready build
+- `yarn start`: Run a production-like server
+
+- `yarn lint`: Check linting in typescript and scss files
+- `yarn lint:fix`: Fix linting issues in typescript and scss files
+
+- `yarn test`: Run tests
+- `yarn test:watch`: Run tests in watch mode
+- `yarn test:coverage`: Run tests in coverage mode
+- `yarn test:e2e`: Run all cypress tests
+
+For detailed explanation on how things work, checkout [Next.Js Docs](https://nextjs.org/docs/getting-started).
