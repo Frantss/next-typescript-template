@@ -2,7 +2,7 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import Counter from '@/modules/counter/Counter';
+import Counter from '@/modules/counter/counter';
 import styles from '@/styles/Home.module.scss';
 
 const IndexPage: NextPage = () => {

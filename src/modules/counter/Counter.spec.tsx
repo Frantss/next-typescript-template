@@ -11,7 +11,7 @@ jest.mock('./counterAPI', () => ({
 }));
 
 import { makeStore } from '../app/store';
-import Counter from './Counter';
+import Counter from './counter';
 
 describe('<Counter />', () => {
   it('renders the component', () => {
