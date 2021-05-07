@@ -1,5 +1,5 @@
 {
-  "name": "with-redux-toolkit-typescript",
+  "name": "next-typescript-template",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
@@ -10,7 +10,9 @@
     "prepare": "husky install",
     "start": "next start",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest ./src --coverage",
+    "test:e2e": "cypress run --quiet"
   },
   "lint-staged": {
     "*.scss": "stylelint --fix",
@@ -18,7 +20,7 @@
     "*.{md}": "prettier --write"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.3.6",
+    "@reduxjs/toolkit": "^1.5.1",
     "classnames": "^2.3.1",
     "next": "latest",
     "next-plugin-preact": "^3.0.4",
@@ -41,6 +43,7 @@
     "@types/react-redux": "7.1.16",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
     "@typescript-eslint/parser": "^4.22.1",
+    "cypress": "^7.2.0",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-cypress": "^2.11.3",

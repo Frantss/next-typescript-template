@@ -30,7 +30,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    project: './tsconfig.json',
+    project: './tsconfig.eslint.json',
   },
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -38,6 +38,7 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
     '@typescript-eslint/restrict-template-expressions': 'warn',
     '@typescript-eslint/no-empty-interface': 'warn',
@@ -53,8 +54,11 @@ module.exports = {
   },
   ignorePatterns: [
     '**/*.scss.d.ts',
+    'next-env.d.ts',
+    'coverage/*',
     'build/*',
     '*.config.js',
+    '*.config.ts',
     '.eslintrc.js',
     'cypress/**/*.js',
     'cypress/**/*.d.ts',
