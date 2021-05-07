@@ -9,6 +9,8 @@ module.exports = {
     'react',
     'react-hooks',
     'cypress',
+    'json',
+    'jsx-a11y',
   ],
   extends: [
     'eslint:recommended',
@@ -19,6 +21,8 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
     'plugin:cypress/recommended',
+    'plugin:json/recommended',
+    'plugin:jsx-a11y/recommended',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
