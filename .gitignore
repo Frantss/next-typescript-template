@@ -9,8 +9,8 @@
 /coverage
 
 # next.js
-/.next/
-/out/
+/.next
+/out
 
 # production
 /build
@@ -18,7 +18,10 @@
 # misc
 .DS_Store
 *.pem
+
+# vs code
 .history
+.vscode
 
 # debug
 npm-debug.log*

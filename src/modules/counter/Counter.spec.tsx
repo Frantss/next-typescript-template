@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/preact';
 import user from '@testing-library/user-event';
 import { Provider } from 'react-redux';
 
